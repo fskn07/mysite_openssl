@@ -1,0 +1,12 @@
+version: '3'
+
+services: 
+  mysite_openssl:
+    build: ./mysite
+    container_name: mysite_openssl
+    volumes:
+      - ./mysite/html:/mysite/html
+    ports:
+      - 80:80
+      - 443:443
+ 
